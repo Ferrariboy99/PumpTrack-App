@@ -7,17 +7,20 @@ class CustomAppBar extends StatelessWidget {
   final Color appBarColor;
   final Color titleColor;
   final bool centerTile;
+  final Color iconThemeColor;
   const CustomAppBar(
       {super.key,
       required this.title,
       required this.centerTile,
       required this.titleColor,
-      required this.appBarColor});
+      required this.appBarColor,
+      required this.iconThemeColor});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      surfaceTintColor: appBarColor,
+        iconTheme: IconThemeData(color: iconThemeColor),
+        surfaceTintColor: appBarColor,
         backgroundColor: appBarColor,
         shadowColor: AppColors.grey,
         elevation: 0.2,

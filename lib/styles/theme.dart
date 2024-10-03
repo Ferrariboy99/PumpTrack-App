@@ -70,13 +70,13 @@ class AppTheme {
     ),
     filledButtonTheme: FilledButtonThemeData(
       style: ButtonStyle(
-        backgroundColor: MaterialStatePropertyAll(AppColors.blue),
+        backgroundColor: MaterialStatePropertyAll(AppColors.darkBlue),
         minimumSize: MaterialStateProperty.all<Size>(
           const Size(double.infinity, 52),
         ),
         shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(25),
+            borderRadius: BorderRadius.circular(10),
           ),
         ),
         textStyle: MaterialStateProperty.all<TextStyle>(

@@ -11,5 +11,6 @@ class AppColors {
   static Color dividers = Colors.grey.shade200;
   static Color container = const Color(0xffF5F5F5);
   static Color transparent = Colors.transparent;
-  static Color blue = Color.fromARGB(255, 14, 112, 249);
+  static Color blue = const  Color.fromARGB(255, 14, 112, 249);
+  static Color red = Colors.red;
 }

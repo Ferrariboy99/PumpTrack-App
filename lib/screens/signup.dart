@@ -66,6 +66,7 @@ class _SignUpState extends State<SignUp> {
     return PreferredSize(
       preferredSize: const Size.fromHeight(54),
       child: CustomAppBar(
+          iconThemeColor: AppColors.blackText,
           title: title,
           centerTile: true,
           titleColor: AppColors.blackText,
@@ -78,7 +79,7 @@ class _SignUpState extends State<SignUp> {
     return AppTextFormField(
       controller: fullNameController,
       textInputAction: TextInputAction.next,
-      labelText: 'FullName',
+      hintText: 'FullName',
       keyboardType: TextInputType.name,
       onChanged: (value) {
         _formKey.currentState?.validate();
@@ -96,7 +97,7 @@ class _SignUpState extends State<SignUp> {
   // email app field
   Widget _getEmail() {
     return AppTextFormField(
-      labelText: 'Email',
+      hintText: 'Email',
       keyboardType: TextInputType.emailAddress,
       textInputAction: TextInputAction.next,
       onChanged: (value) {
@@ -116,7 +117,7 @@ class _SignUpState extends State<SignUp> {
   // password app field
   Widget _getPassword() {
     return AppTextFormField(
-      labelText: 'Password',
+      hintText: 'Password',
       keyboardType: TextInputType.visiblePassword,
       textInputAction: TextInputAction.next,
       onChanged: (_) => _formKey.currentState?.validate(),
@@ -157,7 +158,7 @@ class _SignUpState extends State<SignUp> {
   // confirm password app field
   Widget _getConfirmPassword() {
     return AppTextFormField(
-      labelText: 'Confirm Password',
+      hintText: 'Confirm Password',
       keyboardType: TextInputType.visiblePassword,
       textInputAction: TextInputAction.done,
       onChanged: (value) {

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "305208815775",
+    "project_id": "pumptrack-c857a",
+    "storage_bucket": "pumptrack-c857a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305208815775:android:0c3118b3c50847838c72aa",
+        "android_client_info": {
+          "package_name": "com.example.pumptrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi-pCk51X5QSivAWqCDFi6ss1urRG-T6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

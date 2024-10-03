@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:pumptrack/utils/map_screen.dart';
 
-class Explore extends StatefulWidget{
+class Explore extends StatefulWidget {
   const Explore({super.key});
 
   @override
   State<Explore> createState() => _ExploreState();
 }
-class _ExploreState extends State<Explore>{
+
+class _ExploreState extends State<Explore> {
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return const MapScreen();
   }
 }

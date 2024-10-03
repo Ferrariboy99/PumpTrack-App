@@ -1,17 +1,24 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pumptrack/bottom_nav.dart';
 import 'package:pumptrack/constants/app.dart';
 import 'package:pumptrack/constants/routes.dart';
+import 'package:pumptrack/screens/explore.dart';
 import 'package:pumptrack/screens/home.dart';
 import 'package:pumptrack/screens/signup.dart';
 import 'package:pumptrack/styles/colors.dart';
 import 'package:pumptrack/styles/theme.dart';
 
+import 'firebase_options.dart';
 import 'screens/login.dart';
+import 'screens/screens.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   SystemChrome.setSystemUIOverlayStyle(
     SystemUiOverlayStyle(
         statusBarColor: AppColors.blue,
@@ -52,6 +59,9 @@ class _MainAppState extends State<MainApp> {
           AppRoutes.signUp: (context) => const SignUp(),
           AppRoutes.home: (context) => const Home(),
           AppRoutes.bottomNav: (context) => const BottomNavBar(),
+          AppRoutes.explore: (context) => const Explore(),
+          AppRoutes.settings: (context) => const Settings(),
+          AppRoutes.help_and_feedback: (context) => const HelpAndFeedback()
         });
     // initialize app routes
   }

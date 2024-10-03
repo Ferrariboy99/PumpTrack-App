@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:pumptrack/constants/icons.dart';
 import 'package:pumptrack/constants/texts.dart';
-import 'package:pumptrack/screens/explore.dart';
-import 'package:pumptrack/screens/home.dart';
+import 'package:pumptrack/screens/screens.dart';
 import 'package:pumptrack/styles/colors.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -18,7 +17,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     List<Widget> buildScreens() {
-      return [const Home(), const Explore(), const Explore(), const Explore()];
+      return [const Home(), const Explore(), const Alert(), const Pumps()];
     }
 
     List<PersistentBottomNavBarItem> navBarsItems() {
@@ -60,17 +59,35 @@ class _BottomNavBarState extends State<BottomNavBar> {
 PersistentBottomNavBarItem _getNavItem(
     IconData icon, IconData inactive, String title) {
   return PersistentBottomNavBarItem(
-    icon: Icon(
-      icon,
-      size: 28,
-    ),
-    inactiveIcon: Icon(
-      inactive,
-      size: 28,
-    ),
-    title: (title),
-    textStyle: const TextStyle(fontSize: 10),
-    activeColorPrimary: AppColors.blackText,
+    icon: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 35),
+        child: Column(
+          children: [
+            Icon(
+              icon,
+              size: 28,
+            ),
+            Text(
+              title,
+              style: const TextStyle(fontSize: 10),
+            )
+          ],
+        )),
+    inactiveIcon: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 35),
+        child: Column(
+          children: [
+            Icon(
+              inactive,
+              size: 28,
+            ),
+            Text(
+              title,
+              style: const TextStyle(fontSize: 10),
+            )
+          ],
+        )),
+    activeColorPrimary: AppColors.darkBlue,
     inactiveColorPrimary: AppColors.grey,
   );
 }

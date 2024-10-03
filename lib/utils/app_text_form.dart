@@ -3,8 +3,8 @@ import 'package:pumptrack/styles/colors.dart';
 
 class AppTextFormField extends StatelessWidget {
   const AppTextFormField({
+    required this.hintText,
     required this.textInputAction,
-    required this.labelText,
     required this.keyboardType,
     required this.controller,
     super.key,
@@ -24,8 +24,8 @@ class AppTextFormField extends StatelessWidget {
   final TextEditingController controller;
   final bool? obscureText;
   final Widget? suffixIcon;
-  final String labelText;
   final bool? autofocus;
+  final String? hintText;
   final FocusNode? focusNode;
   final void Function()? onEditingComplete;
 
@@ -34,8 +34,6 @@ class AppTextFormField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 20),
       child: TextFormField(
-        
-
         controller: controller,
         keyboardType: keyboardType,
         textInputAction: textInputAction,
@@ -48,13 +46,18 @@ class AppTextFormField extends StatelessWidget {
         onEditingComplete: onEditingComplete,
         decoration: InputDecoration(
           fillColor: AppColors.dividers.withOpacity(0.2),
-          border: OutlineInputBorder(borderSide: BorderSide(color: AppColors.dividers), borderRadius: BorderRadius.circular(10)),
-
-          enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: AppColors.dividers), borderRadius: BorderRadius.circular(10)),
-                    focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: AppColors.container), borderRadius: BorderRadius.circular(10)),
-
+          border: OutlineInputBorder(
+              borderSide: BorderSide(color: AppColors.dividers),
+              borderRadius: BorderRadius.circular(10)),
+          enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: AppColors.dividers),
+              borderRadius: BorderRadius.circular(10)),
+          focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: AppColors.container),
+              borderRadius: BorderRadius.circular(10)),
           suffixIcon: suffixIcon,
-          labelText: labelText,
+          hintText: hintText,
+          hintStyle: TextStyle(color: AppColors.grey),
           floatingLabelBehavior: FloatingLabelBehavior.always,
         ),
         onTapOutside: (event) => FocusScope.of(context).unfocus(),

@@ -40,6 +40,7 @@ class _LoginState extends State<Login> {
     return PreferredSize(
         preferredSize: const Size.fromHeight(54),
         child: CustomAppBar(
+            iconThemeColor: AppColors.blackText,
             title: title,
             centerTile: true,
             titleColor: AppColors.blackText,
@@ -81,7 +82,7 @@ class _LoginState extends State<Login> {
   // email appField
   Widget _getEmailField() {
     return AppTextFormField(
-      labelText: 'Email',
+      hintText: 'Email',
       keyboardType: TextInputType.emailAddress,
       textInputAction: TextInputAction.next,
       onChanged: (value) {
@@ -101,7 +102,7 @@ class _LoginState extends State<Login> {
   // password field
   Widget _getPasswordField() {
     return AppTextFormField(
-      labelText: 'Password',
+      hintText: 'Password',
       keyboardType: TextInputType.visiblePassword,
       textInputAction: TextInputAction.done,
       onChanged: (value) {
