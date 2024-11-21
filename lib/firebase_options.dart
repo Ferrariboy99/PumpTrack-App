@@ -47,7 +47,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAe8V2Tw6rAGitY5rdVLZMREMT5A-PEAtI',
+    apiKey: '#',
     appId: '1:305208815775:web:46895c54c56e794b8c72aa',
     messagingSenderId: '305208815775',
     projectId: 'pumptrack-c857a',
@@ -57,7 +57,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBi-pCk51X5QSivAWqCDFi6ss1urRG-T6g',
+    apiKey: '#',
     appId: '1:305208815775:android:0c3118b3c50847838c72aa',
     messagingSenderId: '305208815775',
     projectId: 'pumptrack-c857a',
@@ -65,7 +65,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDX1HGo82oRID2KEDX10mU_qa1c0170v3o',
+    apiKey: '#',
     appId: '1:305208815775:ios:4b591c7a945292608c72aa',
     messagingSenderId: '305208815775',
     projectId: 'pumptrack-c857a',
