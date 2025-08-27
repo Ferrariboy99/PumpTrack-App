@@ -19,14 +19,10 @@ Welcome to PumpTrack, a mobile application for tracking borehole pumps in realti
 
 ## Screenshots
 
-![Login Screen](Screenshots/Login.PNG)
-![Signup Screen](Screenshots/Signup.PNG)
-![Forgot Password](Screenshots/Forgot%20password.PNG)
-![Verify Email](Screenshots/verify%20email.PNG)
-![Landing Page](Screenshots/Landing%20page.PNG)
-![Explore](Screenshots/Explore.PNG)
-![Profile](Screenshots/Profile.PNG)
-![Pumps](Screenshots/Pumps.PNG)
+![Landing Screen](Screenshots/AppScreenshot1.jpg)
+![Alerts Screen](Screenshots/AppScreenshot2.jpg)
+![Tracking Screens](Screenshots/AppScreenshot3.png)
+
 
 ## Built With
 
@@ -41,4 +37,4 @@ For any inquiries or support, please contact me at festushelaoshatipamba@gmail.c
 
 # ResearchProject2024
 
-This is my work on the research project.
+This is my work on my final year research project.
