@@ -1,21 +1,38 @@
 # PumpTrack
 
-Welcome to PumpTrack, a mobile application for tracking borehole pumps in realtime using gps. This app is designed to efficiently monitor and manage borehole pumps, ensuring timely recovery of the pumps.
+A Flutter mobile app for tracking borehole pumps in real time using GPS. PumpTrack helps teams monitor pump locations, receive alerts when pumps leave a geofence, and review historical movement and status data.
 
-## Table of Contents
+[![Flutter](https://img.shields.io/badge/built%20with-flutter-blue.svg)](https://flutter.dev) 
+[![Dart](https://img.shields.io/badge/language-dart-0175c2.svg)](https://dart.dev)
+
+---
+
+## Table of contents
 
 - [Features](#features)
 - [Screenshots](#screenshots)
-- [Built With](#built-with)
+- [Demo](#demo)
+- [Built with](#built-with)
+- [Getting started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Install & run](#install--run)
+  - [Configuring Firebase & Google Maps](#configuring-firebase--google-maps)
+- [Project structure](#project-structure)
+- [Contributing](#contributing)
 - [Contact](#contact)
+- [Notes](#notes)
+
+---
 
 ## Features
 
-- **Real-time Monitoring:** Track the location of borehole pumps in real-time.
-- **Alerts:** Receive notifications when a pump is moved out of a geofence.
-- **Historical Data:** View logs and historical data for each pump.
-- **Location Tracking:** Monitor the location of borehole pumps.
-- **User Authentication:** Secure login and user management features.
+- Real-time GPS location tracking of borehole pumps
+- Geofencing with alerts when a pump moves outside defined boundaries
+- Historical logs and per-pump activity history
+- User authentication and role-based access (via Firebase)
+- Clean, single-codebase UI built with Flutter
+
+---
 
 ## Screenshots
 
@@ -23,18 +40,103 @@ Welcome to PumpTrack, a mobile application for tracking borehole pumps in realti
 ![Alerts Screen](Screenshots/AppScreenshot2.jpg)
 ![Tracking Screens](Screenshots/AppScreenshot3.png)
 
+---
 
-## Built With
+## Demo
 
-- **[Flutter](https://flutter.dev/):** The UI toolkit for building natively compiled applications for mobile from a single codebase.
-- **[Dart](https://dart.dev/):** The programming language used for Flutter development.
-- **[Google Maps API](https://developers.google.com/maps):** For real-time location tracking and geofencing.
-- **[Firebase](https://firebase.google.com/):** For user authentication, real-time database, and cloud storage.
+(Consider adding a short GIF or a link to a hosted demo here.)
+
+---
+
+## Built with
+
+- Flutter — UI toolkit for building natively compiled apps
+- Dart — programming language
+- Google Maps API — maps, geolocation, and geofencing
+- Firebase — Authentication, Realtime Database / Firestore, Cloud Functions, Storage
+
+---
+
+## Getting started
+
+### Prerequisites
+
+- Flutter installed (recommend latest stable). See: https://flutter.dev/docs/get-started/install
+- A Firebase project for authentication and data storage
+- Google Maps API key with Maps SDK enabled
+- Xcode (macOS) / Android Studio or command-line Android SDK for building
+
+### Install & run
+
+1. Clone the repository
+   git clone https://github.com/Ferrariboy99/PumpTrack-App.git
+2. Change directory
+   cd PumpTrack-App
+3. Get dependencies
+   flutter pub get
+4. Configure native Firebase files:
+   - Android: add `google-services.json` to `android/app/`
+   - iOS: add `GoogleService-Info.plist` to `ios/Runner/`
+5. Add your Google Maps API key (Android: `AndroidManifest.xml`, iOS: AppDelegate / plist)
+6. Run the app
+   flutter run
+
+---
+
+## Configuring Firebase & Google Maps
+
+- Firebase:
+  - Create a Firebase project.
+  - Enable Authentication (email/password or other providers used).
+  - Create a Firestore or Realtime Database and set appropriate rules.
+  - Place `google-services.json` (Android) and `GoogleService-Info.plist` (iOS) in the app folders.
+
+- Google Maps:
+  - Enable the Maps SDK for Android and iOS in Google Cloud Console.
+  - Restrict the API key to your app bundle identifiers or package names.
+  - Insert the API key into your app’s native config files.
+
+If you’d like, I can prepare a checklist of the exact files and keys to edit in this repo.
+
+---
+
+## Project structure (high level)
+
+- lib/ — main application code (screens, models, services)
+- android/ — Android native config and gradle files
+- ios/ — iOS native config and Xcode project
+- assets/ or Screenshots/ — images and media used in the app
+
+(Adjust paths above to match your repo if different.)
+
+---
+
+## Contributing
+
+Thanks for considering contributing! Suggested workflow:
+
+1. Fork the repo
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit changes with clear messages
+4. Open a pull request with a description of your changes
+
+Please add tests where appropriate and follow existing code style.
+
+---
 
 ## Contact
 
-For any inquiries or support, please contact me at festushelaoshatipamba@gmail.com
+For questions or support, email: festushelaoshatipamba@gmail.com
 
-# ResearchProject2024
+---
 
-This is my work on my final year research project.
+## Notes
+
+- This repo contains work for ResearchProject2024 (final year research project).
+- Consider adding a LICENSE file (for example, MIT) if you want to allow open-source use.
+- If you want, I can:
+  - Add badges for build status or license
+  - Create a CONTRIBUTING.md or ISSUE_TEMPLATE
+  - Open a branch and submit a PR with this README update
+
+---
