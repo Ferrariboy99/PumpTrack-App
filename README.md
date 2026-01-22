@@ -36,7 +36,7 @@ A Flutter mobile app for tracking borehole pumps in real time using GPS. PumpTra
 
 ## Screenshots
 
-A compact, polished gallery to preview the app. Click any thumbnail to view the full-size image.
+Preview the app. Click any thumbnail to view the full-size image.
 
 <table>
   <tr>
