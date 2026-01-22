@@ -1,6 +1,6 @@
 # PumpTrack
 
-A Flutter mobile app for tracking borehole pumps in real time using GPS. PumpTrack helps teams monitor pump locations, receive alerts when pumps leave a geofence, and review historical movement and status data.
+A Flutter mobile app for tracking borehole pumps in real time using GPS. PumpTrack helps teams monitor pump locations, receive alerts when pumps leave a geofence, and review historical movement and station[...]
 
 [![Flutter](https://img.shields.io/badge/built%20with-flutter-blue.svg)](https://flutter.dev) 
 [![Dart](https://img.shields.io/badge/language-dart-0175c2.svg)](https://dart.dev)
@@ -36,9 +36,32 @@ A Flutter mobile app for tracking borehole pumps in real time using GPS. PumpTra
 
 ## Screenshots
 
-![Landing Screen](Screenshots/AppScreenshot1.jpg)
-![Alerts Screen](Screenshots/AppScreenshot2.jpg)
-![Tracking Screens](Screenshots/AppScreenshot3.png)
+A compact, polished gallery to preview the app. Click any thumbnail to view the full-size image.
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="Screenshots/AppScreenshot1.jpg">
+        <img src="Screenshots/AppScreenshot1.jpg" alt="Landing Screen" width="300" />
+      </a>
+      <p><strong>Landing Screen</strong><br/><small>Quick status & login</small></p>
+    </td>
+    <td align="center">
+      <a href="Screenshots/AppScreenshot2.jpg">
+        <img src="Screenshots/AppScreenshot2.jpg" alt="Alerts Screen" width="300" />
+      </a>
+      <p><strong>Alerts</strong><br/><small>Geofence and movement alerts</small></p>
+    </td>
+    <td align="center">
+      <a href="Screenshots/AppScreenshot3.png">
+        <img src="Screenshots/AppScreenshot3.png" alt="Tracking Screens" width="300" />
+      </a>
+      <p><strong>Tracking</strong><br/><small>Map view & history</small></p>
+    </td>
+  </tr>
+</table>
+
+Tip: To make the README even more dynamic, consider adding a short GIF (150–300px width) that demonstrates a pump moving and triggering an alert. Place it above the gallery for an eye-catching hero preview.
 
 ---
 
