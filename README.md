@@ -133,10 +133,3 @@ For questions or support, email: festushelaoshatipamba@gmail.com
 ## Notes
 
 - This repo contains work for ResearchProject2024 (final year research project).
-- Consider adding a LICENSE file (for example, MIT) if you want to allow open-source use.
-- If you want, I can:
-  - Add badges for build status or license
-  - Create a CONTRIBUTING.md or ISSUE_TEMPLATE
-  - Open a branch and submit a PR with this README update
-
----
