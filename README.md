@@ -1,6 +1,6 @@
 # PumpTrack
 
-A Flutter mobile app for tracking borehole pumps in real time using GPS. PumpTrack helps teams monitor pump locations, receive alerts when pumps leave a geofence, and review historical movement and station[...]
+A Flutter mobile app for tracking borehole pumps in real time using GPS. PumpTrack helps teams monitor pump locations, receive alerts when pumps leave a geofence, and review historical movement.
 
 [![Flutter](https://img.shields.io/badge/built%20with-flutter-blue.svg)](https://flutter.dev) 
 [![Dart](https://img.shields.io/badge/language-dart-0175c2.svg)](https://dart.dev)
@@ -61,13 +61,12 @@ Preview the app. Click any thumbnail to view the full-size image.
   </tr>
 </table>
 
-Tip: To make the README even more dynamic, consider adding a short GIF (150–300px width) that demonstrates a pump moving and triggering an alert. Place it above the gallery for an eye-catching hero preview.
 
 ---
 
 ## Demo
 
-(Consider adding a short GIF or a link to a hosted demo here.)
+
 
 ---
 
@@ -119,7 +118,7 @@ Tip: To make the README even more dynamic, consider adding a short GIF (150–30
   - Restrict the API key to your app bundle identifiers or package names.
   - Insert the API key into your app’s native config files.
 
-If you’d like, I can prepare a checklist of the exact files and keys to edit in this repo.
+
 
 ---
 
@@ -130,7 +129,6 @@ If you’d like, I can prepare a checklist of the exact files and keys to edit i
 - ios/ — iOS native config and Xcode project
 - assets/ or Screenshots/ — images and media used in the app
 
-(Adjust paths above to match your repo if different.)
 
 ---
 
@@ -143,13 +141,14 @@ Thanks for considering contributing! Suggested workflow:
 3. Commit changes with clear messages
 4. Open a pull request with a description of your changes
 
-Please add tests where appropriate and follow existing code style.
+
 
 ---
 
 ## Contact
 
 For questions or support, email: festushelaoshatipamba@gmail.com
+Portfolio: [festushelaoshatipamba.com](https://festushelaoshatipamba.com/)
 
 ---
 
